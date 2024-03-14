@@ -1,0 +1,279 @@
+section {
+    padding-top: 128px;
+}
+
+.btn.button {
+    border: 3px solid #000000;
+    border-radius: 24px;
+}
+
+.btn.button:hover, .btn.button.active {
+    border: 3px solid #000000;
+    border-radius: 24px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.home {
+    background-color: antiquewhite;
+    /* width: 100%; */
+    height: 700px;
+}
+
+.home h1 {
+    font-size: 72px;
+}
+
+.home h3 {
+    font-size: 48px;
+}
+
+.home .text {
+    display: flex;
+}
+
+.dynamic-txts {
+    padding-left: 0;
+    margin-bottom: 0;
+    overflow: hidden; 
+}
+
+.dynamic-txts h1 span{
+    position: relative;
+    line-height: 90px;
+}
+
+.dynamic-txts h1 span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: antiquewhite;
+    border-left: 2px solid #000000;
+    animation: typing 3s steps(10) infinite;
+}
+
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+}
+
+.home .image {
+	border-radius: 50%;
+	background-color: #000000;
+	padding: 3px;
+}
+
+.home .image img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.home .arrow img{
+    width: 50px;
+}
+
+#arrow {
+    animation: arrowHome 2s infinite ease-in-out;
+}
+
+@keyframes arrowHome {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#about {
+    position: relative;
+}
+
+.about::before {
+    content: 'About';
+    z-index: 1;
+    font-size: 72px;
+    color: gray;
+    opacity: 0.5;
+    position: absolute;
+    font-weight: 700;
+    top: 20px;
+    left: 100px;
+}
+
+.about-exp-item {
+    margin-top: 32px;
+}
+
+.about-exp-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-exp-item-detail {
+    display: none;
+}
+
+#work {
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.work::before {
+    content: 'Work';
+    z-index: 1;
+    font-size: 72px;
+    color: gray;
+    opacity: 0.5;
+    position: absolute;
+    font-weight: 700;
+    top: 20px;
+    left: 100px;
+}
+
+.work-img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "work-1 work-2" "work-3 work-3";
+    gap: 16px;
+}
+
+.work-img img {
+    width: 100%;
+}
+
+.work-img-item {
+    position: relative;
+}
+
+.work-img-item:hover::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#work-1 {
+    grid-area: work-1;
+}
+#work-1:hover::after {
+   content: 'Web Project';
+}
+#work-2 {
+    grid-area: work-2;
+}
+#work-2:hover::after {
+    content: 'Web Project';
+ }
+#work-3 {
+    grid-area: work-3;
+}
+#work-3:hover::after {
+    content: 'Web Project';
+}
+
+#contact {
+    position: relative;
+    padding-bottom: 128px;
+}
+
+.contact::before {
+    content: 'Contact';
+    z-index: 1;
+    font-size: 72px;
+    color: gray;
+    opacity: 0.5;
+    position: absolute;
+    font-weight: 700;
+    top: 20px;
+    left: 100px;
+}
+
+.contact-form {
+    border: 1px solid #000000;
+    padding: 64px 32px;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 992px) {
+    .home {
+        height: 670px;
+    }
+
+    .home .d-flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home .image {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .home h1 {
+        font-size: 42px;
+        margin-bottom: 0;
+    }
+
+    .home h3 {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .home .text {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dynamic-txts h1 span::after {
+        top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 586px) {
+    .about::before {
+        left: 10px;
+    }
+
+    .work::before {
+        left: 10px;
+    }
+
+    .contact::before {
+        left: 10px;
+    }
+}

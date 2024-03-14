@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+        <nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
+				<a class="navbar-brand fs-3 fw-bold" href="#">Moodboard</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto fw-bolder">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class= "nav-item">
+							<a class ="nav-link" href ="#work">Work</a>
+						</li>
+						<li class="nav-item">
+							<a class ="nav-link" href ="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section id="home" class ="home">
+			<div class="container">
+				<div class ="row d-flex align-items-center">
+					<div class="col-12 col-lg-8">
+						<h3 class="fw-semibold">Hi! I am</h3>
+						<div class="text">
+							<div class="dynamic-txts">
+								<h1 class="fw-bold"><span>Moodboard Sagi</span></h1>
+							</div>
+						</div>
+						<p class="fs-2">I am Software Engineer based in Indonesia</p>
+						<a class="btn button" href="images/foto.JPG" download>Resume</a>
+					</div>
+					<div class="col-1 col-lg-4 mt-4 image">
+						<img src="images/foto.JPG" alt="potrait">
+					</div>
+				</div>
+				<a href="#about" class="arrow text-decoration-none text-dark w-100 d-flex align-items-center flex-column mt-5 mt-sm-4">
+					<span class="fw-bold">More Info</span>
+					<img id="arrow" class="mt-1" src="images/arrow.svg" alt="">
+				</a>
+			</div>
+		</section>
+		<section id="about">
+			<div class="about container">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Facere sunt voluptatem ipsam ipsa totam adipisci aliquam 
+					aspernatur esse commodi impedit blanditiis nulla tempore, 
+					rerum quas tenetur facilis dolores sint quis. Beatae delectus 
+					molestias temporibus quaerat dignissimos quo ab officia! Ad atque dignissimos 
+					neque, inventore tempore ut rem nihil rerum sit?
+				</p>
+				<div class="about-exp mb-5">
+					<div class="about-exp-item">
+						<div class="about-exp-item-header">
+							<div>
+								<h5>Software Engineer</h5>
+								<p>Coding Studio (2021-Now)</p>
+							</div>
+							<button class="btn button" onclick="toggleDetail(event)">More Info</button>
+						</div>
+						<p class="about-exp-item-detail">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Adipisci natus eligendi facilis laborum. Recusandae aspernatur quas 
+							distinctio ipsa suscipit odit hic quam commodi voluptates, magnam delectus odio? 
+							Molestias, ex reprehenderit?
+						</p>
+					</div>
+					<div class="about-exp-item">
+						<div class="about-exp-item-header">
+							<div>
+								<h5>Software Engineer</h5>
+								<p>Coding Studio (2021-Now)</p>
+							</div>
+							<button class="btn button" onclick="toggleDetail(event)">More Info</button>
+						</div>
+						<p class="about-exp-item-detail">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Adipisci natus eligendi facilis laborum. Recusandae aspernatur quas 
+							distinctio ipsa suscipit odit hic quam commodi voluptates, magnam delectus odio? 
+							Molestias, ex reprehenderit?
+						</p>
+					</div>
+					<div class="about-exp-item">
+						<div class="about-exp-item-header">
+							<div>
+								<h5>Software Engineer</h5>
+								<p>Coding Studio (2021-Now)</p>
+							</div>
+							<button class="btn button" onclick="toggleDetail(event)">More Info</button>
+						</div>
+						<p class="about-exp-item-detail">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Adipisci natus eligendi facilis laborum. Recusandae aspernatur quas 
+							distinctio ipsa suscipit odit hic quam commodi voluptates, magnam delectus odio? 
+							Molestias, ex reprehenderit?
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="work" class="pb-5" >
+			<div class="work container">
+				<div class="row d-flex align-items-center gap-5">
+					<div class="col-12 col-md-6">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Delectus perferendis officiis corrupti consequatur exercitationem architecto vitae iure non. 
+							Odio delectus dolores, ducimus et minima laborum officiis? Assumenda illo ut laudantium possimus
+							ex placeat expedita est temporibus deserunt tenetur ducimus, 
+							a quod facilis. Numquam nulla minima distinctio, quod reprehenderit enim iste!
+						</p>
+					</div>
+					<div class="col-12 col-md-5 work-img">
+						<div id="work-1" class="work-img-item">
+							<img src="images/work-1.png" alt="work 1">
+						</div>
+						<div id="work-2" class="work-img-item">
+							<img src="images/work-2.png" alt="work 2">
+						</div>
+						<div id="work-3" class="work-img-item">
+							<img src="images/work-3.png" alt="work 3">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container contact">
+				<div class="row d-flex align-items-center gap-5">
+					<div class="col-12 col-lg-6">
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+							Suscipit magnam voluptas numquam iste dicta reprehenderit libero officia quo reiciendis 
+							quae distinctio itaque qui, non nesciunt vitae explicabo voluptatibus laudantium rem 
+							blanditiis! Et cum doloremque enim itaque porro expedita consectetur nobis sint autem 
+							culpa temporibus adipisci, quidem illum sequi. Unde, velit.
+						</p>
+						<div class="row">
+							<div class="col d-flex align-items-center">
+								<img class="w-25" src="images/Facebook.svg" alt="facebook">
+								<p class="mb-0 ms-2">Moodboard</p>
+							</div>
+							<div class="col d-flex align-items-center">
+								<img class="w-25" src="images/Instagram.svg" alt="Instagram">
+								<p class="mb-0 ms-2">Moodboard</p>
+							</div>
+							<div class="col d-flex align-items-center">
+								<img class="w-25" src="images/Twitter.svg" alt="Twitter">
+								<p class="mb-0 ms-2">Moodboard</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-5">
+						<form class="contact-form" onsubmit="onFormSubmit(event)">
+							<div class="mb-3">
+							  <label class="form-label">Email</label>
+							  <input type="email" id="inp_email" class="form-control" placeholder="example.@mail.com">
+							</div>
+							<div class="mb-3">
+							  <label class="form-label">Subject</label>
+							  <input type="text" id="inp_subject" class="form-control" placeholder="Your Subject">
+							</div>
+							<div class="mb-3">
+							  <label class="form-label">Message</label>
+							  <input type="text" id="inp_message" class="form-control" placeholder="Your Message">
+							</div>
+							<div class="d-flex justify-content-center mt-5">
+								<button type="submit" class="btn button">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- JS Bootstrap -->
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- JS -->
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
